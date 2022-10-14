@@ -7,7 +7,7 @@
 #==============================================================================
  
 #Define
-Z_MOD_NAME          = "3's roads base";
+Z_MOD_NAME          = "3-s-roads-base";
 Z_MOD_FOLDER        = "ModScripts/_Mods/" + Z_MOD_NAME + "/";
 
 # include script file
