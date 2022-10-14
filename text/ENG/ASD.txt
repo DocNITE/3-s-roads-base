@@ -1,0 +1,4 @@
+# This test commands / Пошел нахуй, ой то есть это тестовые команды
+
+ASD/Open
+\cg[../../ModScripts/_Mods/3's roads base/tex/ASD]\m[overkill]\optB[move to (x+10),move to (x-10), move to (y+10), move to (y-10), Check mood]\cgoff

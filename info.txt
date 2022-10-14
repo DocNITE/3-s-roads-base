@@ -1,0 +1,27 @@
+Author: DocNight
+Version: 0.7.3.0
+
+Description: 
+   Story mod, what added new content: location, enemy, quests and
+more.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EVENTS:
+"ev_tavern"  -  tavern map event;
+"ev_graveyard" - graveyard ev map
+
+#Check time:
+if $game_date.day?

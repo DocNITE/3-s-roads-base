@@ -1,0 +1,4 @@
+TavernStreet/OvermapEnter
+\cg[map_region_NoerRoad]\m[confused]Tavern 3'roads\n Sound's like not bad.\optB[Never mind,Enter]
+
+#=============================================================================================================
