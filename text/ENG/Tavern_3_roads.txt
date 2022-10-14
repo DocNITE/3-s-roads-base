@@ -2,3 +2,7 @@ TavernStreet/OvermapEnter
 \cg[map_region_NoerRoad]\m[confused]Tavern 3'roads\n Sound's like not bad.\optB[Never mind,Enter]
 
 #=============================================================================================================
+
+#Дорожный знак
+TavernStreet/RoadMap
+\m[overkill]Oh wow man, this is roadmap!\optB[...,Where i can find Sybaris?,Where i can find Noer?, Where i can find Doom Fortress?]
