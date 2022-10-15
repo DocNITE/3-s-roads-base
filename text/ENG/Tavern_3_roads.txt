@@ -5,4 +5,13 @@ TavernStreet/OvermapEnter
 
 #Дорожный знак
 TavernStreet/RoadMap
-\m[overkill]Oh wow man, this is roadmap!\optB[...,Where i can find Sybaris?,Where i can find Noer?, Where i can find Doom Fortress?]
+\m[overkill]Oh wow man, this is roadmap!\optB[...,Слышь.. как мне попасть в Сибарис?,Итак.. ты знаешь где находится Ноэр?, Что за ху... Doom Fortress?]
+
+TavernStreet/RoadMap_Dialog1
+\m[sexhurt]Слышь, мелкая сучка, я не знаю чего тебе надо. Сибраси на востоке в 15 км от тебя.
+
+TavernStreet/RoadMap_Dialog2
+\m[sad]О да, конечно! Разворачивайся и никогда не возвращайся!
+
+TavernStreet/RoadMap_Dialog3
+\m[bereft]THE LORD FOR BLACKGATE!!! TO COME FOR!!! Просто иди на сервер

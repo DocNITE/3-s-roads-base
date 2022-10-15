@@ -19,6 +19,17 @@ def OnMapChoice(mID)
     end
 end
 
+# When player start dialog
+def OnDialogStart(mID)
+    case mID
+    # d_roadmap // in tavern street
+    when Z_D_TAVERN_STREET_ROADMAP
+        import(Z_MOD_NAME, "src/event/TavernStreetRoadmap.rb")
+    else
+        
+    end
+end
+
 # When player enter in Overmap
 def EventOvermapEnter(arg)
     EvLib.sum("-point-FFCGraveyard",29,88);

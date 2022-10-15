@@ -9,4 +9,7 @@ Z_TAVERN_STREET_MAP = 193;
 Z_TAVERN_STREET_EV      = "ev_tavern";
 Z_TAVERN_GRAVEYARD_EV   = "ev_graveyard";
 
+# Dialog
+Z_D_TAVERN_STREET_ROADMAP   = "d_roadmap";
+
 #$FFCTextDB          = Text.new(Z_MOD_FOLDER + "text/ENG");
