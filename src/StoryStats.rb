@@ -1,0 +1,16 @@
+# Внимание. Теперь вместо 0 ставим всегда 1. 
+# Т.К. рубби детектит пустые таблицы со значением 0
+Z_STORY_STATS = [
+    # Save version
+    ["3S: VER_INFO", Z_MOD_VERSION],
+
+    # Intro
+    ["3S: INTRO_1", NO],
+
+    # Main stats
+    ["3S: FIRST_ENTER_IN_TAVERN",   NO],
+    ["3S: FIRST_MEETING_IN_TAVERN",   NO]
+];
+
+
+

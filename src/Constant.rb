@@ -1,5 +1,9 @@
 Z_DEBUG             = true;
 
+# TYPEDEF
+YES = 2;
+NO  = 1;
+
 #Z_TITLE_SCREEN_MAP  = 189;
 Z_GRAVEYARD_MAP     = 190;
 Z_OVERMAP_OBJECTS   = 191;

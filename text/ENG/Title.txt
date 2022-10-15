@@ -1,0 +1,12 @@
+Intro/CH1_0
+\bg[../../ModScripts/_Mods/3-s-roads-base/tex/titoli_ch1]\SndLib[fistful_play]\narr Modding LonaRPG's Community present:
+
+Intro/CH1_1
+\narr Based on LonaRPG (bruh)
+
+Intro/CH1_2
+\narr Author: DocNight
+
+Intro/CH1_3
+\narr    In story mode\n\{3's roads - Chapter One
+\narr For a Fistfull Coins
