@@ -7,6 +7,9 @@ Z_STORY_STATS = [
     # Intro
     ["3S: INTRO_1", NO],
 
+    # Shiza dialog
+    ["3S: SHIZA_FIRST_MEETING",   NO],
+
     # Main stats
     ["3S: FIRST_ENTER_IN_TAVERN",   NO],
     ["3S: FIRST_MEETING_IN_TAVERN",   NO]
