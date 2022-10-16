@@ -11,3 +11,9 @@ def callMsg(fileName)
             call_msg( "../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
     end
 end
+
+#for popup player msg
+def callInfoPopup(text)
+    SndLib.sound_QuickDialog
+	$game_map.popup(0,text,0,0);
+end

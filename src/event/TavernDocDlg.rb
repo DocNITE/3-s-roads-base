@@ -1,6 +1,6 @@
-# Диалог с Джулианосом, заведующим таверной
+# Диалог с Докнайтовичем, заведующим таверной
 
-def teo_t_m_dialog
+def doc_t_m_dialog
     callMsg("Tevern_3_roads_main:Tavern/Menu#{rand(3)+1}");
 
     case $game_temp.choice
@@ -22,7 +22,7 @@ def teo_t_m_dialog
 
     end
 end
-teo_t_m_dialog
+doc_t_m_dialog
 
 cam_center(0);
 $game_temp.choice = -1;
