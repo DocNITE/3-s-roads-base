@@ -3,6 +3,15 @@
 Tavern/DoorClosed
 У меня нету ключа..
 
+Tavern/Kicked
+Тебя выгнали из-за неоплаты.
+
+Tavern/NapOnFloor
+Я не могу спать на полу..
+
+Tavern/CantNap
+Мне нужно заказать комнату..
+
 # Первый заход
 
 Tavern/FirstEnter1
