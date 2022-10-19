@@ -12,7 +12,11 @@ Z_STORY_STATS = [
 
     # Main stats
     ["3S: FIRST_ENTER_IN_TAVERN",   NO],
-    ["3S: FIRST_MEETING_IN_TAVERN",   NO]
+    ["3S: FIRST_MEETING_IN_TAVERN",   NO],
+
+    # For a Fistful Coins
+    ["3S: CONVOY_VISIBLE",   NO],
+    ["3S: FFC_QUEST_STATE",   1]
 ];
 
 

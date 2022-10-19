@@ -6,7 +6,7 @@ def shiza_t_first_dlg
 end
 
 def shiza_t_dlg
-    callMsg("Tavern_3_roads:Shiza/FirstMeeting");
+    #callMsg("Tavern_3_roads:Shiza/FirstMeeting");
 end
 
 if $story_stats["3S: SHIZA_FIRST_MEETING"] == NO

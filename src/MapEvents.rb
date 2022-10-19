@@ -35,6 +35,7 @@ end
 def EventOvermapEnter()
     EvLib.sum("-point-FFCGraveyard",29,88);
     EvLib.sum("-point-FFCTavern", 35, 72);
+    EvLib.sum("-point-FFCConvoy", 36, 64);
 end
 #addEvent("OnOvermapEnter", method(:EventOvermapEnter));
 
