@@ -22,36 +22,61 @@ module DataManager
 		#----------------------------------------------------------
         FileGetter.load_mod_EventLib("ModScripts/_Mods/" + Z_MOD_NAME + "/data/Map191.rvdata2");
 
-		itemInfo = -1;
 		#----------------------------------------------------------
+		# * ITEMS:
+		#----------------------------------------------------------
+
 		# * Tavern 3's roads room key
-		#    code	:	3S_ItemTavernKey
-		#----------------------------------------------------------
-		itemInfo = [
-			#Name
-			getTextInfo("Items:3S_ItemTavernKey/Name"),
-			#Ev_Name
-			"3S_ItemTavernKey",
-			#Description
-			getTextInfo("Items:3S_ItemTavernKey/Description"),
-			#Icon
-			nil,
-			#Effect
-			nil,
-			#Price
-			300
-		];
+		#    code	:	3S_ItemTavernKey		
 		addCustomItem(
 			#Type
 			ItemType::ITEM, 
 			#Parent item
 			$data_ItemName["ItemNoerTavernNapKey"], 
 			#Info
-			itemInfo
-		)				
+			[
+				#Name
+				getTextInfo("Items:3S_ItemTavernKey/Name"),
+				#Ev_Name
+				"3S_ItemTavernKey",
+				#Description
+				getTextInfo("Items:3S_ItemTavernKey/Description"),
+				#Icon
+				nil,
+				#Effect
+				nil,
+				#Price
+				300
+			]
+		)	
+		
+		# * Pre-Graveyard Treasure Map
+		#    code	:	3S_ItemGraveyardMapPRE		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemNoerTavernNapKey"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemGraveyardMapPRE/Name"),
+				#Ev_Name
+				"3S_ItemGraveyardMapPRE",
+				#Description
+				getTextInfo("Items:3S_ItemGraveyardMapPRE/Description"),
+				#Icon
+				"#{Z_MOD_FOLDER}tex/item_map",
+				#Effect
+				nil,
+				#Price
+				40000
+			]
+		)	
     end
 end
 
+#$game_party.gain_item($data_ItemName["3S_ItemGraveyardMapPRE"], 1);
 #----------------------------------------------------------
 # * Add new item in game
 #----------------------------------------------------------

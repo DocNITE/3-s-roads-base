@@ -37,6 +37,9 @@ SndLib.sound_QuickDialog
 call_msg_popup("TagMapNoerTavern:Nap/NotMyBed")
 
 
+$story_stats["3S: CONVOY_VISIBLE"] = YES
+
+
 if $game_map.threat
 	SndLib.sys_buzzer
 	$game_map.popup(0,"QuickMsg:Lona/incombat#{rand(2)}",0,0)
