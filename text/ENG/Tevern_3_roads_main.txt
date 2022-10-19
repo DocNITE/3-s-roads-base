@@ -4,7 +4,7 @@ Tavern/DoorClosed
 У меня нету ключа..
 
 Tavern/Kicked
-Тебя выгнали из-за неоплаты.
+\narr Тебя \c[18]выгнали\c[0] из-за неоплаты.
 
 Tavern/NapOnFloor
 Я не могу спать на полу..

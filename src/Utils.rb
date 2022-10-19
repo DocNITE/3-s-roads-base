@@ -1,3 +1,20 @@
+# Add text buffer
+module TextCache
+    #--------------------------------------------------------------------------
+    # * Check Cache Existence
+    #--------------------------------------------------------------------------
+    def self.include?(key)
+        @cache[key] && !@cache[key].nil?
+    end
+    #--------------------------------------------------------------------------
+    # * Txt info
+    #--------------------------------------------------------------------------
+    def self.txt_info(path, file, title)
+        @cache ||={}
+        @cache[path] = Text.new(path) unless include?(path)
+        @cache[path]["#{file}:#{title}"]
+    end
+end
 
 # for mod's text
 def callMsg(fileName)
@@ -23,5 +40,19 @@ def callInfoPopup(fileName)
             call_msg_popup("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
         else
             call_msg_popup("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
+    end
+end
+
+#Get info from text file
+def getTextInfo(_info)
+    fileName    = _info.split(':')[0];
+    title       = _info.split(':')[1];
+    case $lang
+        when "ENG"
+            return TextCache.txt_info(Z_MOD_FOLDER + "text/ENG", fileName, title)
+        when "RUS"
+            return TextCache.txt_info(Z_MOD_FOLDER + "text/ENG", fileName, title)
+        else
+            return TextCache.txt_info(Z_MOD_FOLDER + "text/ENG", fileName, title)
     end
 end

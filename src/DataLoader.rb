@@ -25,14 +25,15 @@ module DataManager
 		itemInfo = -1;
 		#----------------------------------------------------------
 		# * Tavern 3's roads room key
+		#    code	:	3S_ItemTavernKey
 		#----------------------------------------------------------
 		itemInfo = [
 			#Name
-			"Ключ от комнаты",
+			getTextInfo("Items:3S_ItemTavernKey/Name"),
 			#Ev_Name
 			"3S_ItemTavernKey",
 			#Description
-			"I m desp",
+			getTextInfo("Items:3S_ItemTavernKey/Description"),
 			#Icon
 			nil,
 			#Effect
