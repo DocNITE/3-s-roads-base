@@ -19,9 +19,42 @@ def OnMapChoice(mID)
     end
 end
 
+# When player start dialog
+def OnDialogStart(mID)
+    case mID
+    # TAVERN STREET
+    # d_roadmap // in tavern street
+    when Z_D_TAVERN_STREET_ROADMAP
+        import(Z_MOD_NAME, "src/event/TavernStreetRoadmap.rb")
+    else
+        
+    end
+end
+
 # When player enter in Overmap
-def EventOvermapEnter(arg)
+def EventOvermapEnter()
     EvLib.sum("-point-FFCGraveyard",29,88);
     EvLib.sum("-point-FFCTavern", 35, 72);
+    EvLib.sum("-point-FFCConvoy", 36, 64);
 end
-addEvent("OnOvermapEnter", method(:EventOvermapEnter));
+#addEvent("OnOvermapEnter", method(:EventOvermapEnter));
+
+# When player enter in Overmap and play intro
+=begin
+def EventIntro()
+    if $story_stats["3S: INTRO_1"] == NO
+        callMsg("Title:Intro/CH1_0");
+        sleep(10);
+        callMsg("Title:Intro/CH1_1");
+        sleep(10);
+        callMsg("Title:Intro/CH1_2");
+        sleep(10);
+        callMsg("Title:Intro/CH1_3");
+        sleep(5);
+        $cg.erase
+
+        $story_stats["3S: INTRO_1"] = YES;
+    end
+end
+=end
+#addEvent("OnOvermapEnter", method(:EventIntro));

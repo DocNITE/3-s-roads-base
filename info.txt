@@ -25,3 +25,57 @@ EVENTS:
 
 #Check time:
 if $game_date.day?
+
+
+tmpData = ["UnderGround",nil,nil,nil,
+nil,
+nil,nil,nil]
+
+moveto_teleport_point("OutToHouseR",tmpData,4)
+
+SndLib.sound_QuickDialog
+call_msg_popup("TagMapNoerTavern:Nap/NotMyBed")
+
+
+if $game_map.threat
+	SndLib.sys_buzzer
+	$game_map.popup(0,"QuickMsg:Lona/incombat#{rand(2)}",0,0)
+	return
+end
+
+point=$game_map.get_storypoint("QuestBoard")
+	get_character(point[2]).call_balloon(28,-1) if !$game_map.events[point[2]].nil?
+	get_character(point[2]).summon_data[:ForceQuest] = true
+
+
+self.animation = animation_atk_sh
+
+# Главные роли:
+
+Юлий Докнайтович: Цвет 3
+   Заведующий и хозяин закусочной "у трех дорог". Любит пошутить, старается держать все под контролем.
+   Часто пилит мозги своим работникам, и даже самому себе.
+
+Дирк, или же "Дик": Цвет 1
+   Охраник территории трактира и, по совместительству, является вышибалой.
+   Характер - отвратительный. Не женат.
+   Нытик.
+
+Оливус, или же "Володимер": Цвет 5
+   Является администратором закусочной. Джентельмен.
+   Всегда занятой. Не женат.
+
+Джонатан "Таффер":
+   Постоялый гость закусочной (может сдохнуть во время выполнения квеста).
+   Бывший наемник, а еще более бывший портовый воришка.
+   Был женат два раза. Не женат.
+
+Человек без имени:
+   Какой-то тип в шляпе. Выглядит дохуя умным и знает все.
+   Наверное не женат.
+
+Тачми (Лона): Цвет 6
+   Девушка, что пришла в закусочную. Прозвали из-за внешности, мол
+   прямо и просит чтобы "потрогали ее".
+
+Шиз'а: Цвет 2

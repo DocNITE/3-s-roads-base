@@ -57,7 +57,8 @@ class Game_Map
 
         # Check, if player enter on overmap
 		if @isOverMap
-			callEvent("OnOvermapEnter", []);
+			#callEvent("OnOvermapEnter", []);
+			EventOvermapEnter();
         end
     end
 end

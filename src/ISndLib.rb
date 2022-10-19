@@ -25,7 +25,7 @@ module SndLib
 
     # MUSIC
     def self.fistful_play(vol = 80, effect = 0)
-        self.bgmPlay("For_a_Fistful_Coins", vol,effect);
+        self.bgmPlay("The good, The bad and The ugly - Titoli", 140,effect);
     end
 
     def self.graveyard(vol = 80, effect = 0)
