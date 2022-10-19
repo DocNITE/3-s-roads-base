@@ -1,3 +1,8 @@
+# Взаимодействия
+
+Tavern/DoorClosed
+У меня нету ключа..
+
 # Первый заход
 
 Tavern/FirstEnter1

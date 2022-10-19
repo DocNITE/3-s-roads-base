@@ -35,5 +35,6 @@ import(Z_MOD_NAME, "src/ISndLib.rb"         );
 import(Z_MOD_NAME, "src/IGameMap.rb"        );
 import(Z_MOD_NAME, "src/IGameEvent.rb"      );
 import(Z_MOD_NAME, "src/IGamePlayer.rb"     );
+import(Z_MOD_NAME, "src/IItemConfigs.rb"    );
 import(Z_MOD_NAME, "src/IDataManager.rb"    );
 import(Z_MOD_NAME, "src/ISceneMapTitle.rb"  );

@@ -16,7 +16,7 @@ def doc_t_m_dialog
 			[0,33 ,nil	, 300, 12],	#ItemFruitWine
 			[0,49 ,nil	, 100  ,12],	#ItemSopGood
             [0,57 ,nil	, 250  ,12],	#ItemBottledBeer
-			[0,$data_items.length-1 ,nil	, 1  ,12]	#ddddd
+			[0,$data_ItemName["3S_ItemTavernKey"].id ,nil	, 100  ,4]	#So, tavern key
 			]
 		manual_trade(good,charStoreHashName,charStoreTP,charStoreExpireDate,noSell=false,noBuy=false)
     else

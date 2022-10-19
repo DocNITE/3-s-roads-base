@@ -33,6 +33,9 @@ nil,nil,nil]
 
 moveto_teleport_point("OutToHouseR",tmpData,4)
 
+SndLib.sound_QuickDialog
+call_msg_popup("TagMapNoerTavern:Nap/NotMyBed")
+
 
 if $game_map.threat
 	SndLib.sys_buzzer
