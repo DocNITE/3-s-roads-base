@@ -22,15 +22,75 @@ tmpPicked = ""
 		$game_temp.choice = -1
 
 		getTextInfo
+
+		"3S: BROTHERHOOD_FRACTION"
 =end
 
 callMsg("DocDlg:Tavern/Menu#{rand(3)+1}", 0, 2, 0);
-def doc_t_m_dialog
+
+def doc_about_guests
+	tmpAboutDirk = $story_stats["3s_doc_a_dirk"] == 0;
+	tmpAboutShiza = $story_stats["3s_doc_a_shiza"] == 0;
+	tmpAboutVolod = $story_stats["3s_doc_a_volod"] == 0;
+	tmpAboutTaffer = $story_stats["3s_doc_a_taffer"] == 0;
 
 	tmpPicked = ""
 	tmpQuestList = []
-	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutTavern"), "ABOUT_TAVERN"]
-	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutGuests"), "ABOUT_GUESTS"]
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutVolodimer"), "ABOUT_VOLOD"]	 if tmpAboutVolod
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutTaffer"), "ABOUT_TAFFER"]	 if tmpAboutTaffer
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutShiza"), "ABOUT_SHIZA"]	 if tmpAboutShiza
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutDick"), "ABOUT_DIRK"]	 if tmpAboutDirk
+	cmd_sheet = tmpQuestList
+	cmd_text =""
+	for i in 0...cmd_sheet.length
+		cmd_text.concat(cmd_sheet[i].first+",")
+	end
+	call_msg("\\optB[#{cmd_text}]")
+	portrait_hide
+	
+	$game_temp.choice == -1 ? tmpPicked = false : tmpPicked = cmd_sheet[$game_temp.choice][1]
+	$game_temp.choice = -1
+
+    case tmpPicked
+	when "ABOUT_VOLOD"
+		callMsg("DocDlg:Tavern/AboutVolodimer");
+		$story_stats["3s_doc_a_volod"] = 1
+	when "ABOUT_TAFFER"
+		callMsg("DocDlg:Tavern/AboutTaffer");
+		$story_stats["3s_doc_a_taffer"] = 1
+	when "ABOUT_SHIZA"
+		callMsg("DocDlg:Tavern/AboutShiza");
+		$story_stats["3s_doc_a_shiza"] = 1
+	when "ABOUT_DIRK"
+		callMsg("DocDlg:Tavern/AboutDick");
+		$story_stats["3s_doc_a_dirk"] = 1
+	else
+	end
+
+	if $story_stats["3s_doc_a_dirk"] == 1 && 
+		$story_stats["3s_doc_a_volod"] == 1 && 
+		$story_stats["3s_doc_a_taffer"] == 1 && 
+		$story_stats["3s_doc_a_shiza"] == 1
+
+		$story_stats["3s_doc_about_guests"] = 1;
+		doc_t_m_dialog
+	else
+		msgbox "ddd"
+		doc_about_guests
+	end
+end
+
+def doc_t_m_dialog
+
+	tmpAboutTavern = $story_stats["3s_doc_about_tavern"] == 0;
+	tmpAboutGuests = $story_stats["3s_doc_about_guests"] == 0 && !tmpAboutTavern;
+	tmpJoinBh = $story_stats["3S: BROTHERHOOD_FRACTION"] == NOVICE && !tmpAboutTavern && !tmpAboutGuests;
+
+	tmpPicked = ""
+	tmpQuestList = []
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutTavern"), "ABOUT_TAVERN"]	 if tmpAboutTavern
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/AboutGuests"), "ABOUT_GUESTS"]  if tmpAboutGuests
+	tmpQuestList << [getTextInfo("DocDlg:Dlg/JoinBrotherhood"), "JOIN_BROTHERHOOD"]  if tmpJoinBh
 	tmpQuestList << [getTextInfo("DocDlg:Dlg/Barter")			,"BARTER"]
 	tmpQuestList << [getTextInfo("DocDlg:Dlg/Exit")				,"EXIT"]
 	cmd_sheet = tmpQuestList
@@ -39,11 +99,32 @@ def doc_t_m_dialog
 		cmd_text.concat(cmd_sheet[i].first+",")
 	end
 	call_msg("\\optB[#{cmd_text}]")
+	portrait_hide
 	
 	$game_temp.choice == -1 ? tmpPicked = false : tmpPicked = cmd_sheet[$game_temp.choice][1]
 	$game_temp.choice = -1
 
     case tmpPicked
+	when "ABOUT_TAVERN"
+		callMsg("DocDlg:Tavern/AboutTavern");
+		cam_center(0);
+		$story_stats["3s_doc_about_tavern"] = 1;
+		doc_t_m_dialog
+	when "ABOUT_GUESTS"
+		if $game_party.has_item?($data_ItemName["ItemBottledBeer"]) || 
+			$game_party.has_item?($data_ItemName["ItemFruitWine"]) ||
+			$game_party.has_item?($data_ItemName["ItemSopGood"])
+
+			callMsg("DocDlg:Tavern/AboutGuests");
+			cam_center(0);
+			doc_about_guests
+		else
+			callMsg("DocDlg:Tavern/AboutGuestsNoBeer");
+		end
+		cam_center(0);
+		doc_t_m_dialog
+	when "JOIN_BROTHERHOOD"
+		#TODO:
     when "BARTER"
         shopNerf = ([([$story_stats["WorldDifficulty"].round,100].min)-0,0].max*0.001) #put the varible u want nerf shop,  if none put 0. var1=max  var2=min.   max-min must with in 100 (ex:weak125, -25)
 		charStoreTP = 400  #wildHobo 150+rand(800) hobo 300+rand(1000) #Normie 500+rand(2000) #NonTradeShop 1000+rand(2500) #innkeeper 1000+rand(2500) #storeMarket 3000+rand(6000)
@@ -58,10 +139,13 @@ def doc_t_m_dialog
             [0,57 ,nil	, 250  ,12],	#ItemBottledBeer
 			[0,$data_ItemName["3S_ItemTavernKey"].id ,nil	, 100  ,4]	#So, tavern key
 			]
+
+		callMsg("DocDlg:Tavern/Barter")
+
 		manual_trade(good,charStoreHashName,charStoreTP,charStoreExpireDate,noSell=false,noBuy=false)
 		#msgbox "check"
     else
-
+		callMsg("DocDlg:Tavern/Exit");
     end
 end
 doc_t_m_dialog
