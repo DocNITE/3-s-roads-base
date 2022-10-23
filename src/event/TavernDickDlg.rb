@@ -1,7 +1,7 @@
 # Диалог с Диком
 
 def dick_t_first_dlg
-    callMsg("Tavern_3_roads:Dick/FirstMeeting");
+    callMsg("DickDlg:Dick/FirstMeeting");
 end
 
 def dick_t_dlg

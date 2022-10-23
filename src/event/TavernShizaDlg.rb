@@ -2,7 +2,7 @@
 # ["3S: SHIZA_FIRST_MEETING",   NO],  -- первая встреча с шизой
 
 def shiza_t_first_dlg
-    callMsg("Tavern_3_roads:Shiza/FirstMeeting");
+    callMsg("ShizaDlg:Shiza/FirstMeeting");
 end
 
 def shiza_t_dlg
