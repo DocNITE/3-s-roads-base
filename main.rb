@@ -29,6 +29,7 @@ import(Z_MOD_NAME, "src/Utils.rb"           );
 #Init
 import(Z_MOD_NAME, "src/DataLoader.rb"      );
 import(Z_MOD_NAME, "src/MapEvents.rb"       );
+import(Z_MOD_NAME, "src/Achievement.rb"  );
 
 #main hook files
 import(Z_MOD_NAME, "src/ISndLib.rb"         );
@@ -38,3 +39,6 @@ import(Z_MOD_NAME, "src/IGamePlayer.rb"     );
 import(Z_MOD_NAME, "src/IItemConfigs.rb"    );
 import(Z_MOD_NAME, "src/IDataManager.rb"    );
 import(Z_MOD_NAME, "src/ISceneMapTitle.rb"  );
+
+#main
+#import(Z_MOD_NAME, "src/CEnemyBar.rb"  );

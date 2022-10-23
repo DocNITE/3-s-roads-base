@@ -9,8 +9,8 @@
 #inject
 class Game_Event < Game_Character
 
-	def batch_world_map_addon
-    end
+	#def batch_world_map_addon
+    #end
 
 end
 

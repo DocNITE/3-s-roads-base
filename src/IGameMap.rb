@@ -126,3 +126,16 @@ def change_map_tag_subLevel(tmpTar,tmpPoint=0,tmpDir=0,tmpChoice=true,tmpSkipOpt
 		end
 	end
 end
+
+def change_map_region_map_exitLevel(temp_region_trigger=false,tmpChoice=true)
+	return SndLib.sys_buzzer if $game_player.cannot_ChangeMap
+	if $game_map.threat && $story_stats["Setup_Hardcore"] >= 1
+		SndLib.sys_ChangeMapFailed
+		$game_map.popup(0,"QuickMsg:Lona/incombat#{rand(2)}",0,0)
+		#$game_player.jump_reverse if temp_region_trigger==true
+		return
+	end
+	
+	chcg_background_color(0,0,0,0,14)
+	change_map_leave_region
+end

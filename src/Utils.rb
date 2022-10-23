@@ -17,15 +17,15 @@ module TextCache
 end
 
 # for mod's text
-def callMsg(fileName)
+def callMsg(fileName, bg=0,pos=2,wait_pull=1)
     case $lang
         when "ENG"
-            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
+            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName, bg,pos,wait_pull)
         when "RUS"
             #call_msg( "../../" + Z_MOD_FOLDER + "text/RUS/" + fileName)
-            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
+            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName, bg,pos,wait_pull)
         else
-            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
+            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName, bg,pos,wait_pull)
     end
 end
 

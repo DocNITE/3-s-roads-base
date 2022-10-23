@@ -1,0 +1,5 @@
+THIRDS_FirstMeeting/item_name
+Добро пожаловать в наше заведение!
+
+THIRDS_FirstMeeting/description
+Заглянуть в закусочную "У трех дорог".
