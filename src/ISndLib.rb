@@ -24,6 +24,14 @@ module SndLib
     end
 
     # MUSIC
+    def self.tavern_warcraft(vol = 80, effect = 0)
+        self.bgmPlay("The Witcher - Tavern at the End of World", 75,0);
+    end
+
+    def self.titleWitcherMusic()
+        self.bgmPlay("The Witcher 3 - TheNightingale", 80, 0)
+    end
+
     def self.fistful_play(vol = 80, effect = 0)
         self.bgmPlay("The good, The bad and The ugly - Titoli", 140,effect);
     end

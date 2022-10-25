@@ -7,11 +7,6 @@
 #==============================================================================
 
 #inject
-=begin
-
-So, that custom title menu.
-I disabled it. Maybe enable later
-
 class Scene_MapTitle < Scene_Map
 	attr_accessor   :character_name           # character graphic filename
 	attr_accessor   :character_index          # character graphic index
@@ -38,7 +33,6 @@ class Scene_MapTitle < Scene_Map
 			$game_system.menu_disabled = true
 			$titleCreateActorReq = false
 			Graphics.frame_count = 0
-			#SndLib.bgm_play("../../ModScripts/Graveyard");
 		end
 		super
 		@hud.hide
@@ -46,7 +40,6 @@ class Scene_MapTitle < Scene_Map
 	end
 
 end
-=end
 
 if Z_DEBUG
     class TitleMenu < Sprite

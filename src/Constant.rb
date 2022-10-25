@@ -4,7 +4,13 @@ Z_DEBUG             = true;
 YES = 2;
 NO  = 1;
 
-#Z_TITLE_SCREEN_MAP  = 189;
+B_SONG      = 3;
+B_LOVE      = 4;
+B_WTF    = 7;
+B_SILENT    = 8;
+B_LOOKING   = 16;
+
+Z_TITLE_SCREEN_MAP  = 189;
 Z_GRAVEYARD_MAP     = 190;
 Z_OVERMAP_OBJECTS   = 191;
 Z_TAVERN_MAP        = 192;
