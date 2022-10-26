@@ -73,6 +73,30 @@ module DataManager
 				40000
 			]
 		)	
+
+		# * Nuka-Battery
+		#    code	:	3S_ItemNukaBattery		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemNoerTavernNapKey"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemNukaBattery/Name"),
+				#Ev_Name
+				"3S_ItemNukaBattery",
+				#Description
+				getTextInfo("Items:3S_ItemNukaBattery/Description"),
+				#Icon
+				"#{Z_MOD_FOLDER}tex/item_nuka_battery",
+				#Effect
+				nil,
+				#Price
+				18000
+			]
+		)	
     end
 end
 

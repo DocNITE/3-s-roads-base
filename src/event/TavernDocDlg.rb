@@ -24,6 +24,28 @@ tmpPicked = ""
 		getTextInfo
 
 		"3S: BROTHERHOOD_FRACTION"
+
+		when "Prostitution"
+		get_character(0).summon_data[:SexTradeble] = false
+		$game_temp.choice == 0
+		call_msg("commonNPC:RandomNpc/WhoreWork#{talk_style}")
+		call_msg("commonNPC:RandomNpc/choosed")
+		$game_player.actor.sta -=1 #WhoreWorkCost
+		temp_vs1=5+rand(10) #性交易難度
+		call_msg("\\narr #{$game_player.actor.weak.round} VS #{temp_vs1.round}")
+		if $game_player.actor.weak > temp_vs1
+			$game_player.actor.mood +=10
+			$game_player.actor.record_whore_job +=1
+			$game_player.actor.record_lona_title = "WhoreJob/title_hooker" if $game_player.actor.record_whore_job % 10 == 0
+			call_msg("commonNPC:RandomNpc/WhoreWork_win")
+			prev_gold = $game_party.gold
+			play_sex_service_menu(get_character(0),0.5,"rand")
+			play_sex_service_items(get_character(0),["ItemCoin1","ItemCoin2","ItemCoin3"],prev_gold)
+		else
+			$game_player.actor.mood -=3
+			call_msg("commonNPC:RandomNpc/WhoreWork_failed")
+		end
+	end
 =end
 
 callMsg("DocDlg:Tavern/Menu#{rand(3)+1}", 0, 2, 0);

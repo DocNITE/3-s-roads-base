@@ -97,7 +97,7 @@ call_msg_popup("TagMapNoerTavern:Nap/NotMyBed")
 $story_stats["3S: CONVOY_VISIBLE"] = YES
 
 $game_party.gain_item($data_ItemName["3S_ItemGraveyardMapPRE"], 1) 
-
+$game_party.gain_item($data_ItemName["3S_ItemNukaBattery"], 1)
 
 if $game_map.threat
 	SndLib.sys_buzzer

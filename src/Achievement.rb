@@ -5,11 +5,7 @@
 # * New Achievements
 #------------------------------------------------------------------
 GabeSDK::AchievementsData[:THIRDS_FirstMeeting] = [DataManager.get_constant("ACH","THIRDS_FirstMeeting",1), 1, false];
-
-
-
-
-
+GabeSDK::AchievementsData[:THIRDS_NecoDocFirst] = [DataManager.get_constant("ACH","THIRDS_NecoDocFirst",1), 1, false];
 
 
 
