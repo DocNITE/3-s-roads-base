@@ -2,8 +2,17 @@
 
 GabeSDK.getAchievement("THIRDS_NecoDocFirst");
 
+# Надо крч сюда звуки мяумура добавить когда гладишь
+# А еще миниигру под тему некоарк, где ты чешишь кота под спидран
+# Мышкой так водишь по головке. Зажимая расческу.
+# И зарабатываешь очки и бьешь рекорды
 def cat_t_dlg
-    #callMsg("Tavern_3_roads:Shiza/FirstMeeting");
+    callMsg("CatDlg:Cat/417CURSEDTHEME");
+
+	case $game_temp.choice
+	when 1
+		callMsg("CatDlg:Cat/417CURSEDTHEME2");
+	end
 end
 cat_t_dlg
 
