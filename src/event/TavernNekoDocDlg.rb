@@ -1,6 +1,6 @@
 # Диалог с догниггерским котом
 
-GabeSDK.getAchievement("THIRDS_FirstMeeting");
+GabeSDK.getAchievement("THIRDS_NecoDocFirst");
 
 def cat_t_dlg
     #callMsg("Tavern_3_roads:Shiza/FirstMeeting");
