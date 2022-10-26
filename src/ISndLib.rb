@@ -16,11 +16,17 @@ module SndLib
 
     # MAIN BGM/BGS PLAYER:
     def self.bgmPlay(tar_file,vol=80,pitch=100,pos=0)
-        self.bgm_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch);
+        self.bgm_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch, pos);
     end
 
     def self.bgsPlay(tar_file,vol=80,pitch=100,pos=0)
-        self.bgs_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch);
+        self.bgs_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch, pos);
+    end
+
+    # MISC
+
+    def self.cursed(vol = 80, effect = 0)
+        self.bgmPlay("417_cursed_main_theme", 80,0);
     end
 
     # MUSIC
@@ -30,6 +36,7 @@ module SndLib
 
     def self.titleWitcherMusic()
         self.bgmPlay("The Witcher 3 - TheNightingale", 80, 0)
+        #self.cursed();
     end
 
     def self.fistful_play(vol = 80, effect = 0)
