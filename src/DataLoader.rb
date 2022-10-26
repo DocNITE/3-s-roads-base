@@ -49,6 +49,30 @@ module DataManager
 				300
 			]
 		)	
+
+		# * Tavern 3's roads Tuchmi room
+		#    code	:	3S_ItemTavernKeyForever		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemPirateBaneInnNapKey"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemTavernKeyForever/Name"),
+				#Ev_Name
+				"3S_ItemTavernKeyForever",
+				#Description
+				getTextInfo("Items:3S_ItemTavernKeyForever/Description"),
+				#Icon
+				nil,
+				#Effect
+				nil,
+				#Price
+				10000
+			]
+		)	
 		
 		# * Pre-Graveyard Treasure Map
 		#    code	:	3S_ItemGraveyardMapPRE		
