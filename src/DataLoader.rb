@@ -22,35 +22,109 @@ module DataManager
 		#----------------------------------------------------------
         FileGetter.load_mod_EventLib("ModScripts/_Mods/" + Z_MOD_NAME + "/data/Map191.rvdata2");
 
-		itemInfo = -1;
 		#----------------------------------------------------------
+		# * ITEMS:
+		#----------------------------------------------------------
+
 		# * Tavern 3's roads room key
-		#----------------------------------------------------------
-		itemInfo = [
-			#Name
-			"Ключ от комнаты",
-			#Ev_Name
-			"3S_ItemTavernKey",
-			#Description
-			"I m desp",
-			#Icon
-			nil,
-			#Effect
-			nil,
-			#Price
-			300
-		];
+		#    code	:	3S_ItemTavernKey		
 		addCustomItem(
 			#Type
 			ItemType::ITEM, 
 			#Parent item
 			$data_ItemName["ItemNoerTavernNapKey"], 
 			#Info
-			itemInfo
-		)				
+			[
+				#Name
+				getTextInfo("Items:3S_ItemTavernKey/Name"),
+				#Ev_Name
+				"3S_ItemTavernKey",
+				#Description
+				getTextInfo("Items:3S_ItemTavernKey/Description"),
+				#Icon
+				nil,
+				#Effect
+				nil,
+				#Price
+				300
+			]
+		)	
+
+		# * Tavern 3's roads Tuchmi room
+		#    code	:	3S_ItemTavernKeyForever		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemPirateBaneInnNapKey"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemTavernKeyForever/Name"),
+				#Ev_Name
+				"3S_ItemTavernKeyForever",
+				#Description
+				getTextInfo("Items:3S_ItemTavernKeyForever/Description"),
+				#Icon
+				nil,
+				#Effect
+				nil,
+				#Price
+				10000
+			]
+		)	
+		
+		# * Pre-Graveyard Treasure Map
+		#    code	:	3S_ItemGraveyardMapPRE		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemNoerTavernNapKey"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemGraveyardMapPRE/Name"),
+				#Ev_Name
+				"3S_ItemGraveyardMapPRE",
+				#Description
+				getTextInfo("Items:3S_ItemGraveyardMapPRE/Description"),
+				#Icon
+				"#{Z_MOD_FOLDER}tex/item_map",
+				#Effect
+				nil,
+				#Price
+				40000
+			]
+		)	
+
+		# * Nuka-Battery
+		#    code	:	3S_ItemNukaBattery		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemNoerTavernNapKey"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemNukaBattery/Name"),
+				#Ev_Name
+				"3S_ItemNukaBattery",
+				#Description
+				getTextInfo("Items:3S_ItemNukaBattery/Description"),
+				#Icon
+				"#{Z_MOD_FOLDER}tex/item_nuka_battery",
+				#Effect
+				nil,
+				#Price
+				18000
+			]
+		)	
     end
 end
 
+#$game_party.gain_item($data_ItemName["3S_ItemGraveyardMapPRE"], 1);
 #----------------------------------------------------------
 # * Add new item in game
 #----------------------------------------------------------

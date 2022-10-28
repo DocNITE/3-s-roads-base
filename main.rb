@@ -21,6 +21,9 @@ end
 import(Z_MOD_NAME, "src/Constant.rb"        );
 import(Z_MOD_NAME, "src/StoryStats.rb"      );
 
+#load dev.bak. edit's for 0.7.3.0 version
+load_from_list(getFileList("#{Z_MOD_FOLDER}src/dev_bak_support/*.rb"))
+
 #main SDK
 #import(Z_MOD_NAME, "src/CEventMap.rb"       );
 import(Z_MOD_NAME, "src/EventListener.rb"   );
@@ -29,6 +32,7 @@ import(Z_MOD_NAME, "src/Utils.rb"           );
 #Init
 import(Z_MOD_NAME, "src/DataLoader.rb"      );
 import(Z_MOD_NAME, "src/MapEvents.rb"       );
+import(Z_MOD_NAME, "src/Achievement.rb"  );
 
 #main hook files
 import(Z_MOD_NAME, "src/ISndLib.rb"         );
@@ -38,3 +42,6 @@ import(Z_MOD_NAME, "src/IGamePlayer.rb"     );
 import(Z_MOD_NAME, "src/IItemConfigs.rb"    );
 import(Z_MOD_NAME, "src/IDataManager.rb"    );
 import(Z_MOD_NAME, "src/ISceneMapTitle.rb"  );
+
+#main
+#import(Z_MOD_NAME, "src/CEnemyBar.rb"  );

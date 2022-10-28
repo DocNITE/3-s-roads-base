@@ -3,10 +3,10 @@
 
 def volodimer_t_first_dlg
 	if $story_stats["3S: volodiaFirstTalk"] == 0
-    	callMsg("Tavern_3_roads:Volodimer/FirstMeeting1");
+    	callMsg("VolodimerDlg:Volodimer/FirstMeeting1");
 		$story_stats["3S: volodiaFirstTalk"] = YES
 	else
-		callMsg("Tavern_3_roads:Volodimer/FirstMeeting_rand#{rand(3)+1}");
+		callMsg("VolodimerDlg:Volodimer/FirstMeeting_rand#{rand(3)+1}");
 	end
 end
 

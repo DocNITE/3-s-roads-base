@@ -3,6 +3,14 @@
 
 # CAUTION!! You don't need make dialog variables in there. 
 # Just use $story_stats["bla_bla"] == 0, and in end first dialog set $story_stats["bla_bla"] = 1
+
+#Fraction level
+NOVICE = 1;
+FRIEND = 2;
+RANGER = 3;
+KNIGHT = 4;
+MASTER = 5;
+
 Z_STORY_STATS = [
     #---------------------------------------------------------
     # * Save version
@@ -23,6 +31,7 @@ Z_STORY_STATS = [
     ["3S: FIRST_ENTER_IN_TAVERN",   NO],    #old
     ["3S: FIRST_MEETING_IN_TAVERN",   NO],  #old
 
+    ["3S: BROTHERHOOD_FRACTION", NOVICE],
     #---------------------------------------------------------
     # * Quests
     #---------------------------------------------------------

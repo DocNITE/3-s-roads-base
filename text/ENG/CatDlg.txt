@@ -1,0 +1,13 @@
+Cat/Meow
+\{Meow! ♥\}
+
+Cat/Murr
+Mrrrr.. ♥
+
+Cat/417CURSEDTHEME
+You ready?\optB[No...,Fuck yeah!]
+
+Cat/417CURSEDTHEME2
+\SndLib[cursed]Kiedy the great cats village \c[4]eccma417\c[0]?
+Nevermind
+\{Meow! ♥\}\{Meow! ♥\}\{Meow! ♥\}\{Meow! ♥\}\{Meow! ♥\}\{Meow! ♥\}

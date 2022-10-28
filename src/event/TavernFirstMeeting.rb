@@ -3,7 +3,7 @@
 # А... Вы уже вкурсе? Ну тогда заказывайте!
 
 get_character(0).call_balloon(0);
-callMsg("Tevern_3_roads_main:Tavern/FirstMeeting");
+callMsg("DocDlg:Tavern/FirstMeeting");
 $story_stats["3S: FIRST_MEETING_IN_TAVERN"] = YES;
 
 import(Z_MOD_NAME, "src/event/TavernDocDlg.rb");
