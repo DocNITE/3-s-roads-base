@@ -2,6 +2,7 @@ ViewSDK::TEXTURE_PATH = "#{Z_MOD_FOLDER}tex/CAT_MINI_GAME/"
 
 module G_NekoPet
     WINDOW_BACK = CTexture.new(Rect.new(0, 0, 400, 300), "hand", 1129)
+    WINDOW_BACK.sprite.bitmap = Bitmap.new(1,1);
     ViewSDK::makeWindowBitmap(WINDOW_BACK.sprite);
     WINDOW_BACK.setPosition((640/2)-(WINDOW_BACK.size.x/2), (360/2)-(WINDOW_BACK.size.y/2))
 
@@ -20,7 +21,7 @@ module G_NekoPet
     DRAW_SCORE = CDraw.new(CVector2.new(300, 40), "100.0%")
 
     def self.init()
-        ELEM_HAND.setPosition((Graphics.width/2) - (130/2), (Graphics.height/2) + (53/2))
+        ELEM_HAND.setPosition((Graphics.width/2) - (130/2), (Graphics.height/2) - 53)
         TEX_CAT.setPosition((Graphics.width/2) - (143/2), Graphics.height - 166)
 
         newFont = Font.new()
@@ -68,10 +69,10 @@ module G_NekoPet
     end
 
     def self.g_neko_PressButton(arg)
-        if arg[1] == self
+        if arg[1] == ELEM_HAND
             @canRender = true
-            @pX = Mouse.pos?[MX] - @sprite.x;
-            @pY = Mouse.pos?[MY] - @sprite.y;
+            @pX = Mouse.pos?[MX] - ELEM_HAND.sprite.x;
+            @pY = Mouse.pos?[MY] - ELEM_HAND.sprite.y;
         end
     end
     
@@ -85,8 +86,8 @@ module G_NekoPet
         if @canRender == true
             mResX = Mouse.pos?[MX]-@pX;
             mResY = Mouse.pos?[MY]-@pY;
-            mResX = Math.clamp(mResX, 0, Graphics.width-@size.x);
-            mResY = Math.clamp(mResY, 0, Graphics.height-@size.y);
+            mResX = Math.clamp(mResX, 0, Graphics.width-ELEM_HAND.size.x);
+            mResY = Math.clamp(mResY, 0, Graphics.height-ELEM_HAND.size.y);
 
             ELEM_HAND.position = CVector2.new(mResX, mResY);
 
@@ -98,6 +99,8 @@ module G_NekoPet
                     DRAW_SCORE.text = "#{@score}";
                     @isIn = true;
                 end
+            else
+                @isIn = false;
             end
         end
     end
@@ -121,6 +124,9 @@ module G_NekoPet
         Fiber.yield while @inGame == true
     end
 end
+G_NekoPet.init()
+G_NekoPet.disable();
+
 
 EventSDK.addEvent("onMousePressed", G_NekoPet.method(:g_neko_PressButton))
 EventSDK.addEvent("onMouseRealese", G_NekoPet.method(:g_neko_RealeseButton))

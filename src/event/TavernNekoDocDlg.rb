@@ -11,7 +11,9 @@ def cat_t_dlg
 
 	case $game_temp.choice
 	when 1
-		#callMsg("CatDlg:Cat/417CURSEDTHEME2");
+		SndLib.meow;
+	when 2
+		callMsg("CatDlg:Cat/417CURSEDTHEME2");
 		SndLib.cursed;
 	end
 end

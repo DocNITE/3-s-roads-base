@@ -16,17 +16,21 @@ module SndLib
 
     # MAIN BGM/BGS PLAYER:
     def self.bgmPlay(tar_file,vol=80,pitch=100,pos=0)
-        self.bgm_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch, pos);
+        self.bgm_play("../../" + Z_MOD_FOLDER + "snd/BGM/#{tar_file}", vol,pitch, pos);
     end
 
     def self.bgsPlay(tar_file,vol=80,pitch=100,pos=0)
-        self.bgs_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch, pos);
+        self.bgs_play("../../" + Z_MOD_FOLDER + "snd/SE/#{tar_file}", vol,pitch, pos);
     end
 
     # MISC
 
     def self.cursed(vol = 80, effect = 0)
-        self.bgmPlay("417_cursed_main_theme", 80,0);
+        self.bgsPlay("417_cursed_main_theme", 80,0);
+    end
+
+    def self.meow
+        self.bgsPlay("meow_#{rand(2)+1}", 80,0);
     end
 
     # MUSIC

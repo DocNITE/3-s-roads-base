@@ -8,5 +8,4 @@ Intro/CH1_2
 \narr Author: DocNight
 
 Intro/CH1_3
-\narr    In story mod\n\{3's roads - Chapter One
-\narr For a Fistfull Coins
+\narr    In my mod:\n\{3's roads 

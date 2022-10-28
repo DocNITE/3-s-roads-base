@@ -5,7 +5,17 @@ Cat/Murr
 Mrrrr.. ♥
 
 Cat/417CURSEDTHEME
-You ready?\optB[No...,Fuck yeah!]
+\c[2]Неко-Док：\c[0] Mrrrr.. ♥\optB[Оставить в покое,Погладить,НАЧАТЬ МИНИ-ИГРУ]
+
+Cat/MiniGameNoMouse
+\narr (AHTUNG!!) Сначала включи поддержку мыши в найстройках - в главнном меню игры. 
+
+Cat/MiniGameRulesOfNature
+\narr Правила просты: тебе нужно зажать ладонь на кнопку мыши, и гладить кота по голове.
+\narr Чем больше очкой получишь - тем выше твой рекорд. Логично?
+\narr А теперь приготовились...
+\narr ...
+\narr НАЖМИ КНОПКУ "ПРОДОЛЖИТЬ" ЧТОБЫ НАЧАТЬ.
 
 Cat/417CURSEDTHEME2
 \SndLib[cursed]Kiedy the great cats village \c[4]eccma417\c[0]?
