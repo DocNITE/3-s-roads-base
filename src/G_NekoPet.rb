@@ -97,6 +97,7 @@ module G_NekoPet
                 if @isIn == false
                     @score += 1;
                     DRAW_SCORE.text = "#{@score}";
+                    SndLib.meow;
                     @isIn = true;
                 end
             else

@@ -23,14 +23,18 @@ module SndLib
         self.bgs_play("../../" + Z_MOD_FOLDER + "snd/SE/#{tar_file}", vol,pitch, pos);
     end
 
+    def self.sePlay(tar_file,vol=80,pitch=100)
+        Audio.se_play(Z_MOD_FOLDER + "snd/SE/#{tar_file}", vol,pitch);
+    end
+
     # MISC
 
     def self.cursed(vol = 80, effect = 0)
-        self.bgsPlay("417_cursed_main_theme", 80,0);
+        self.bgmPlay("417_cursed_main_theme", 80,0);
     end
 
     def self.meow
-        self.bgsPlay("meow_#{rand(2)+1}", 80,0);
+        self.sePlay("meow_#{rand(2)+1}", 80,0);
     end
 
     # MUSIC
