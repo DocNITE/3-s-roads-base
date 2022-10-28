@@ -23,7 +23,7 @@ def cat_t_minigame_play
 	G_NekoPet.init()
 	G_NekoPet.enable();
 	#G_NekoPet.wait_when_end
-	wait(150*60)
+	wait(150)
 	SndLib.bgm_stop;
 	cat_t_minigame_end
 end
@@ -31,9 +31,11 @@ def cat_t_minigame_end
 	if $story_stats["3S: NEKO_DOC_SCORE"] < G_NekoPet.getScore()
 		$story_stats["3S: NEKO_DOC_SCORE"] = G_NekoPet.getScore();
 	end
+	#msgbox $story_stats["3S: NEKO_DOC_SCORE"]
 	G_NekoPet.disable();
 	wait(120);
-	callMsg("CatDlg:Cat/MiniGameEnd")
+	#callMsg("CatDlg:Cat/MiniGameEnd")
+	call_msg("\\narr #{getTextInfo("CatDlg:Cat/MiniGameEnd")} #{$story_stats["3S: NEKO_DOC_SCORE"]}")
 	SndLib.tavern_warcraft(80, 100);
 end
 
