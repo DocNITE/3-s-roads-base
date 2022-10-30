@@ -28,7 +28,7 @@ newFont.color = Color.new(255, 255, 255, 255);
 GAME_INFO_ADD_BID = CDraw.new(CVector2.new(120, 14), "100.0%", 1142);
 GAME_INFO_ADD_BID.font = newFont;
 GAME_INFO_ADD_BID.text = "Raise you're rate:"
-GAME_INFO_ADD_BID.setPosition(4, 70);
+GAME_INFO_ADD_BID.setPosition(4, 80);
 GAME_INFO_WINDOW.addChild(GAME_INFO_ADD_BID);
 
 GAME_ADD_BP     = CButton.new(CVector2.new(54, 20), false, false, false, 1142);
