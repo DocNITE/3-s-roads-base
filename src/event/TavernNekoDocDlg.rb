@@ -23,7 +23,7 @@ def cat_t_minigame_play
 	G_NekoPet.init()
 	G_NekoPet.enable();
 	#G_NekoPet.wait_when_end
-	wait(150)
+	wait(150*60)
 	SndLib.bgm_stop;
 	cat_t_minigame_end
 end
@@ -47,11 +47,11 @@ def cat_t_dlg
 		SndLib.meow;
 		cat_t_dlg
 	when 2
-		#if !Mouse.enable?
-		#	cat_t_no_mouseController_dlg
-		#else
+		if !Mouse.usable?
+			cat_t_no_mouseController_dlg
+		else
 			cat_t_minigame_play
-		#end
+		end
 	end
 end
 cat_t_dlg

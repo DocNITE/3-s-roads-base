@@ -1,11 +1,5 @@
-Intro/CH1_0
-\bg[../../ModScripts/_Mods/3-s-roads-base/tex/titoli_ch1]\SndLib[fistful_play]\narr Modding LonaRPG's Community present:
-
-Intro/CH1_1
+Intro/CH_1
+\SndLib[one_of_them]\narr Modding LonaRPG's Community present:
 \narr Based on LonaRPG (bruh)
-
-Intro/CH1_2
 \narr Author: DocNight
-
-Intro/CH1_3
-\narr    In my mod:\n\{3's roads 
+\narr    In my mod：\n\{3's roads 

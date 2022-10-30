@@ -1,8 +1,8 @@
 ViewSDK::TEXTURE_PATH = "#{Z_MOD_FOLDER}tex/CAT_MINI_GAME/"
 
 module G_NekoPet
-    WINDOW_BACK = CTexture.new(Rect.new(0, 0, 400, 300), "hand", 1129)
-    WINDOW_BACK.sprite.bitmap = Bitmap.new(1,1);
+    WINDOW_BACK = CTexture.new(Rect.new(0, 0, 400, 320), "hand", 1129)
+    WINDOW_BACK.sprite.bitmap = Bitmap.new(400,320);
     ViewSDK::makeWindowBitmap(WINDOW_BACK.sprite);
     WINDOW_BACK.setPosition((640/2)-(WINDOW_BACK.size.x/2), (360/2)-(WINDOW_BACK.size.y/2))
 
@@ -18,7 +18,7 @@ module G_NekoPet
 
     # ZONE_DETECT - use in detect touch
 
-    DRAW_SCORE = CDraw.new(CVector2.new(300, 40), "100.0%")
+    DRAW_SCORE = CDraw.new(CVector2.new(300, 40), "100.0%", 1132)
 
     def self.init()
         ELEM_HAND.setPosition((Graphics.width/2) - (130/2), (Graphics.height/2) - 53)

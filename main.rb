@@ -45,4 +45,5 @@ import(Z_MOD_NAME, "src/ISceneMapTitle.rb"  );
 
 #main
 import(Z_MOD_NAME, "src/G_NekoPet.rb"  );
+import(Z_MOD_NAME, "src/G_Yantzee.rb"  );
 #import(Z_MOD_NAME, "src/CEnemyBar.rb"  );
