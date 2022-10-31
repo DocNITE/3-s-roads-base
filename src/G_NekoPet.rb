@@ -7,7 +7,7 @@ module G_NekoPet
     WINDOW_BACK.setPosition((640/2)-(WINDOW_BACK.size.x/2), (360/2)-(WINDOW_BACK.size.y/2))
 
     TEX_HAND = CTexture.new(Rect.new(0, 0, 130, 53), "hand", 1131)
-    ELEM_HAND= CElement.new(CVector2.new(130, 53), 1130);
+    ELEM_HAND= CElement.new(CVector2.new(130, 53), false, 1130);
     ELEM_HAND.addChild(TEX_HAND);
 
     TEX_CAT = CTexture.new(Rect.new(0, 0, 143, 146), "cat_face", 1130)
@@ -62,12 +62,12 @@ module G_NekoPet
         DRAW_SCORE.setVisible(true);
         WINDOW_BACK.setVisible(true);
         @inGame = true
-        @canRender = false
+        @canRender = true
         @score = 0;
         @pX = 0
         @pY = 0 
     end
-
+=begin
     def self.g_neko_PressButton(arg)
         if arg[1] == ELEM_HAND
             @canRender = true
@@ -81,11 +81,11 @@ module G_NekoPet
             @canRender = false
         end
     end
-    
+=end
     def self.g_neko_Render(arg)
         if @canRender == true
-            mResX = Mouse.pos?[MX]-@pX;
-            mResY = Mouse.pos?[MY]-@pY;
+            mResX = Mouse.pos?[MX]-ELEM_HAND.size.x/2;
+            mResY = Mouse.pos?[MY]-ELEM_HAND.size.y/2;
             mResX = Math.clamp(mResX, 0, Graphics.width-ELEM_HAND.size.x);
             mResY = Math.clamp(mResY, 0, Graphics.height-ELEM_HAND.size.y);
 
@@ -129,8 +129,8 @@ G_NekoPet.init()
 G_NekoPet.disable();
 
 
-EventSDK.addEvent("onMousePressed", G_NekoPet.method(:g_neko_PressButton))
-EventSDK.addEvent("onMouseRealese", G_NekoPet.method(:g_neko_RealeseButton))
+#EventSDK.addEvent("onMousePressed", G_NekoPet.method(:g_neko_PressButton))
+#EventSDK.addEvent("onMouseRealese", G_NekoPet.method(:g_neko_RealeseButton))
 EventSDK.addEvent("onRender",       G_NekoPet.method(:g_neko_Render))
 
 # Ладно похуй, завтра допилю мини игру. 
