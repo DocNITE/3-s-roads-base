@@ -72,6 +72,30 @@ module DataManager
 				#Price
 				10000
 			]
+		)
+		
+		# * Taicon / For grabling games coin
+		#    code	:	3S_ItemTaicon		
+		addCustomItem(
+			#Type
+			ItemType::ITEM, 
+			#Parent item
+			$data_ItemName["ItemCoin1"], 
+			#Info
+			[
+				#Name
+				getTextInfo("Items:3S_ItemTaicon/Name"),
+				#Ev_Name
+				"3S_ItemTaicon",
+				#Description
+				getTextInfo("Items:3S_ItemTaicon/Description"),
+				#Icon
+				"#{Z_MOD_FOLDER}tex/item_taicon",
+				#Effect
+				nil,
+				#Price
+				0
+			]
 		)	
 		
 		# * Pre-Graveyard Treasure Map

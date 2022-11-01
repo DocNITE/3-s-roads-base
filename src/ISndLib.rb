@@ -42,6 +42,10 @@ module SndLib
         self.bgmPlay("The Witcher - Tavern at the End of World", 75,0);
     end
 
+    def self.a_bomb
+        self.bgmPlay("OH MY GOD JC A BOMB", 75, 0)
+    end
+
     def self.one_of_them
         self.bgmPlay("little_gray_cat_theme_song", 75, 0)
     end

@@ -2,7 +2,7 @@ THIRDS_FirstMeeting/item_name
 Добро пожаловать!
 
 THIRDS_FirstMeeting/description
-Заглянуть в закусочную "У трех дорог".
+Посетить секретную закусочную "У трех дорог".
 
 THIRDS_NecoDocFirst/item_name
 Погладь кота...
