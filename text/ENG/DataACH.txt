@@ -1,11 +1,11 @@
 THIRDS_FirstMeeting/item_name
-Добро пожаловать!
+New Adventures!
 
 THIRDS_FirstMeeting/description
-Посетить секретную закусочную "У трех дорог".
+Visit the secret tavern "3's roads".
 
 THIRDS_NecoDocFirst/item_name
-Погладь кота...
+Pet the cat...
 
 THIRDS_NecoDocFirst/description
-Погладить кошку ДокНайта. Возможно это кошка самого JC Denton'a...
+Pet DocNight's cat. Maybe it's JC Denton's own cat...

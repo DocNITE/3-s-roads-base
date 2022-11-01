@@ -23,7 +23,7 @@ def callMsg(fileName, bg=0,pos=2,wait_pull=1)
             call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName, bg,pos,wait_pull)
         when "RUS"
             #call_msg( "../../" + Z_MOD_FOLDER + "text/RUS/" + fileName)
-            call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName, bg,pos,wait_pull)
+            call_msg("../../" + Z_MOD_FOLDER + "text/RUS/" + fileName, bg,pos,wait_pull)
         else
             call_msg("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName, bg,pos,wait_pull)
     end
@@ -37,7 +37,7 @@ def callInfoPopup(fileName)
             call_msg_popup("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
         when "RUS"
             #call_msg( "../../" + Z_MOD_FOLDER + "text/RUS/" + fileName)
-            call_msg_popup("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
+            call_msg_popup("../../" + Z_MOD_FOLDER + "text/RUS/" + fileName)
         else
             call_msg_popup("../../" + Z_MOD_FOLDER + "text/ENG/" + fileName)
     end
@@ -51,7 +51,7 @@ def getTextInfo(_info)
         when "ENG"
             return TextCache.txt_info(Z_MOD_FOLDER + "text/ENG", fileName, title)
         when "RUS"
-            return TextCache.txt_info(Z_MOD_FOLDER + "text/ENG", fileName, title)
+            return TextCache.txt_info(Z_MOD_FOLDER + "text/RUS", fileName, title)
         else
             return TextCache.txt_info(Z_MOD_FOLDER + "text/ENG", fileName, title)
     end

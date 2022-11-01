@@ -1,44 +1,44 @@
 3S_ItemTavernKey/Name
-Ключ от комнаты
+Room Key
 
 3S_ItemTavernKey/Description
-\}Ключ от комнаты отдыха в закусочной\n
-\C[5]Позволяет отдохнуть от путешествий\n
+\}Key for Tavern room\n
+\C[5]Allows you to take a nap\n
 
 3S_ItemTavernKeyForever/Name
-Ключ с маркировкой "Тачми"
+Key marked "Tachmi"
 
 3S_ItemTavernKeyForever/Description
-\}Ключ от твоей комнаты в закусочной\n
-\C[5]У тебя теперь есть личная комната!\n
-\C[18]Пожалуйста, не выбрасывайте этот предмет\n
+\}The key to your room at the tavern\n
+\C[5]You now have a private room!\n
+\C[18]Please do not drop this item\n
 
 #--------------------------------------------
 
 3S_ItemTaicon/Name
-Тайкон
+Taicon
 
 3S_ItemTaicon/Description
-\}Фишка для игры в покер\n
-Также используется в торговле\n
-\C[5]ДЕРЖА ЭТУ ФИШКУ ВЫ СОГЛАШАТЕСЬ С НЕЗАВИСИМОСТЬЮ ТАЙВАНЯ\n
+\}Poker chip\n
+Also used in trade\n
+\C[5]HOLDING THIS CHIP YOU AGREE TO THE INDEPENDENCE OF TAIWAN\n
 
 #--------------------------------------------
 
 3S_ItemGraveyardMapPRE/Name
-Размытая карта сокровищ
+Blurred treasure map
 
 3S_ItemGraveyardMapPRE/Description
-\}Карта сокровищ, размытая.\n
-Часть изображения отсутствует.\n
-\C[18]КВЕСТОВЫЙ ПРЕДМЕТ\n
+\}Treasure map, blurry.\n
+Part of the image is missing.\n
+\C[18]QUEST ITEM\n
 
 #--------------------------------------------
 
 3S_ItemNukaBattery/Name
-Ядерная батарейка
+Nuclear battery
 
 3S_ItemNukaBattery/Description
-\}Подожди, он что, правда не шутит?\n
-Откуда у тебя ядерная батарея?\n
-\C[18]КВЕСТОВЫЙ ПРЕДМЕТ\n
+\}Wait, is he really joking?\n
+Where did you get the nuclear battery?\n
+\C[18]QUEST ITEM\n

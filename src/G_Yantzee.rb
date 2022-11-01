@@ -1,5 +1,5 @@
 =begin
-* Fuck eccma417 and his RimWorld.
+* Eccma417 is gay, he played RimWorld
 * Ты должен был бороться со злом, а не играть в игру
 * с сообществом поддерживающим LGBT и ниггеров.
 *

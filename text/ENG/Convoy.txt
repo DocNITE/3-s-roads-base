@@ -1,2 +1,2 @@
 Convoy/OvermapEnter
-\m[confused]Разграбленный конвой\n Похоже разбитый недавно...\optB[Неважно,Войти]
+\m[confused]Plundered convoy\n Looks like it's recently broken...\optB[Never mind,Enter]
