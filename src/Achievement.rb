@@ -118,6 +118,7 @@ class Scene_AdultContentWarning < Scene_Base
 			create_warning_posters
 	end
 	
+	# Man, if you see that - dont worry it just a joke
 	def create_warning_posters
 		@warning_poster=Sprite.new(@viewport)
 		@warning_poster.visible=true
@@ -136,7 +137,9 @@ class Scene_AdultContentWarning < Scene_Base
 	
 	def perform_transition
 		super
-		Graphics.fadein(30)
+		Graphics.fadein(5)
+		SndLib.sys_ok
+		Graphics.fadein(5)
 	end
 	
 	def update
