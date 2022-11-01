@@ -5,7 +5,20 @@ Cat/Murr
 Mrrrr.. ♥
 
 Cat/417CURSEDTHEME
-You ready?\optB[No...,Fuck yeah!]
+\c[5]Baguette：\c[0] Mrrrr.. ♥\optB[Leave alone,Pet,START MINI-GAME]
+
+Cat/MiniGameNoMouse
+\narr (AHTUNG!!) First, enable mouse support in the settings - in the main menu of the game. 
+
+Cat/MiniGameRulesOfNature
+\narr The rules are simple: you need to hold your hand on the mouse button and stroke the cat's head.
+\narr The more points you get, the higher your record. Is it logical?
+\narr And now get ready...
+\narr ...
+\narr PRESS SOME BUTTON TO START.
+
+Cat/MiniGameEnd
+\narr Game is over... You're record：
 
 Cat/417CURSEDTHEME2
 \SndLib[cursed]Kiedy the great cats village \c[4]eccma417\c[0]?

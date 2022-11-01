@@ -1,22 +1,22 @@
 # Взаимодействия
 
 Tavern/DoorClosed
-У меня нету ключа..
+I don't have a key..
 
 Tavern/Kicked
-\narr Тебя \c[18]выгнали\c[0] из-за неоплаты.
+\narr You were \c[18]kicked out\c[0] due to non-payment.
 
 Tavern/NapOnFloor
-Я не могу спать на полу..
+I can't sleep on the floor..
 
 Tavern/CantNap
-Мне нужно заказать комнату..
+I need to buy a room..
 
 # Первый заход
 
 Tavern/FirstEnter1
-\narr Войдя в помещение, ты ощущаешь запах свежей выпечки и скисшего вина. Все это вызывает слабые рвотные позывы.
+\narr When you enter the room, you smell fresh pastries and sour wine. All this causes weak gagging.
 
 Tavern/FirstEnter2
-\m[wtf]\c[6]Лона：\c[0]Ewwww...
-\narr Несмотря на не слишком дружелюную атмосферу, ты предвкушаешь будущие \c[18]приключения\c[0]...
+\m[wtf]\c[6]Lona：\c[0]Ewwww...
+\narr Despite the not very friendly atmosphere, you are looking forward to \c[18]adventure\c[0]...

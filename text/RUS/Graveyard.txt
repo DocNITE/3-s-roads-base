@@ -1,0 +1,4 @@
+Graveyard/OvermapEnter
+\m[confused]Blackhand's Graveyard\n The back alleys..  I should be careful...\optB[I'm outta here!,Enter...]
+
+#=============================================================================================================

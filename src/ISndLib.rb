@@ -16,11 +16,15 @@ module SndLib
 
     # MAIN BGM/BGS PLAYER:
     def self.bgmPlay(tar_file,vol=80,pitch=100,pos=0)
-        self.bgm_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch, pos);
+        self.bgm_play("../../" + Z_MOD_FOLDER + "snd/BGM/#{tar_file}", vol,pitch, pos);
     end
 
     def self.bgsPlay(tar_file,vol=80,pitch=100,pos=0)
-        self.bgs_play("../../" + Z_MOD_FOLDER + "snd/#{tar_file}", vol,pitch, pos);
+        self.bgs_play("../../" + Z_MOD_FOLDER + "snd/SE/#{tar_file}", vol,pitch, pos);
+    end
+
+    def self.sePlay(tar_file,vol=80,pitch=100)
+        Audio.se_play(Z_MOD_FOLDER + "snd/SE/#{tar_file}", vol,pitch);
     end
 
     # MISC
@@ -29,9 +33,21 @@ module SndLib
         self.bgmPlay("417_cursed_main_theme", 80,0);
     end
 
+    def self.meow
+        self.sePlay("meow_#{rand(2)+1}", 80,0);
+    end
+
     # MUSIC
     def self.tavern_warcraft(vol = 80, effect = 0)
         self.bgmPlay("The Witcher - Tavern at the End of World", 75,0);
+    end
+
+    def self.a_bomb
+        self.bgmPlay("OH MY GOD JC A BOMB", 75, 0)
+    end
+
+    def self.one_of_them
+        self.bgmPlay("little_gray_cat_theme_song", 75, 0)
     end
 
     def self.titleWitcherMusic()

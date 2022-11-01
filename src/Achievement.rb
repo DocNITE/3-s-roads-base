@@ -108,3 +108,51 @@ class AchListMenu < Sprite
 		
 	end
 end
+
+$warning_showed = false
+class Scene_AdultContentWarning < Scene_Base
+	
+	def start
+			$loading_screen.dispose if $loading_screen
+			super
+			create_warning_posters
+	end
+	
+	# Man, if you see that - dont worry it just a joke
+	def create_warning_posters
+		@warning_poster=Sprite.new(@viewport)
+		@warning_poster.visible=true
+        if $lang == "CHT"
+		    @warning_poster.bitmap=Bitmap.new("#{Z_MOD_FOLDER}tex/DontWorryManItsJustAJoke.png")
+        elsif $lang == "RUS"
+            @warning_poster.bitmap=Bitmap.new("#{Z_MOD_FOLDER}tex/DontWorryManItsJustAJoke.png")
+        else
+            @warning_poster.bitmap=Bitmap.new("#{Z_MOD_FOLDER}tex/DontWorryManItsJustAJoke.png")
+            # TODO: Dont forget remove China flag for other languages
+            #return;
+            #SceneManager.goto(Scene_MapTitle)
+        end
+        SceneManager.goto(Scene_MapTitle)
+	end
+	
+	def perform_transition
+		super
+		Graphics.fadein(5)
+		SndLib.sys_ok
+		Graphics.fadein(5)
+	end
+	
+	def update
+		super
+		if Input.press?(:LETTER_Z) || WolfPad.trigger?(:Z_LINK)
+			SndLib.ppl_Cheer
+			SceneManager.goto(Scene_MapTitle)
+		end
+	end
+
+	def terminate
+		super
+		$warning_showed =true
+		@warning_poster.dispose
+		end
+end #end class

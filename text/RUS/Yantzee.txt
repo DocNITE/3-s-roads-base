@@ -1,0 +1,11 @@
+Yantzee/RaiseBid
+Выбери ставку:
+
+Yantzee/RoundResult
+Результаты раунда:
+
+Yantzee/RoundLose
+Ты проиграл...
+
+Yantzee/RoundWin
+Ты выиграл!

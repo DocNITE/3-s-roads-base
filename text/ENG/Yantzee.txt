@@ -1,0 +1,11 @@
+Yantzee/RaiseBid
+Raise you're rate:
+
+Yantzee/RoundResult
+Round result:
+
+Yantzee/RoundLose
+You lose...
+
+Yantzee/RoundWin
+You won!

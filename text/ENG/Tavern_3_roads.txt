@@ -1,25 +1,24 @@
 TavernStreet/OvermapEnter
-\cg[map_region_NoerRoad]\m[confused]Tavern 3'roads\n Sound's like not bad.\optB[Never mind,Enter]
+\cg[map_region_NoerRoad]Tavern 3 roads\n Sounds like not bad.\optB[Never mind,Enter]
 
 #=============================================================================================================
 
 TavernStreet/Nap
-\narr Тебя прогнали ссаными тряпками как \c[18]шавку\c[0]... 
+\narr You were sent away with pissing rags like a \c[18]mongrub\c[0]...
 
 #Дорожный знак
 TavernStreet/RoadMap
-\narrOFF Обычный дорожный знак. Ты решаешь заговорить с ним...\optB[...,Привет.. как мне попасть в Сибарис?,А ты не знаешь.. где найти Ноэр?, Крепость Обреченных?]
-
+\narrOFF An ordinary road sign. You decide to talk to him...\optB[...,Hello.. how can I get to Sybaris?,Do you know.. where i find Noer?, Doom Fortress?]
 TavernStreet/RoadMap_Dialog1
-\narr Дорожный знак ничего не ответил. Возникла не уютная \c[26]тишина\c[0].
+\narr The road sign didn't answer. There was an uncomfortable \c[26]silence\c[0].
 ...
-Однако, ты видишь выцарапанную надпись: "\c[18]Сибарис\c[0] - 15 км. на восток".
+However, you see a scrawled inscription: "\c[18]Sybaris\c[0] - 15 km. to the east".
 
 TavernStreet/RoadMap_Dialog2
-\narr В ответ ты слышишь лишь гул ветра и насекомых в траве.
+\narr All you hear in response is the hum of the wind and insects in the grass.
 ...
-Почему бы просто не развернуться и пойти обратно, да потом не возвращаться?
+Why not just turn around and go back, and then not come back?
 
 TavernStreet/RoadMap_Dialog3
-\narr Странное неловкое чувство одолевает тебя. Такое происходит, когда в ответ - тишина.
-Впрочем, дорожный знак указывает на запад. Скорее всего из-за обвисшей доски.
+\narr A strange uneasy feeling overcomes you. This happens when the answer is silence.
+However, the road sign points to the west. Most likely because of the sagging board.

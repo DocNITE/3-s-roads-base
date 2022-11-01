@@ -1,20 +1,20 @@
 #Володя
 
 Volodimer/FirstMeeting1
-\narr Шагая вдоль дороги, ты замечаешь молодого человека. Он хорошо одет, что явно выдавало в нем человека из знатного рода.
-Похоже, он что-то делает с повозкой.
-\narrOFF\CamMP[Volodimer_f]\c[5]???：\c[0] *в пол голоса* Трижды ебаный пиздец... Все корыто в говно! Все колеса в пизду!
-\narr Похоже, \c[5]незнакомец \c[0]находится не в лучшем настроении.
-\narrOFF\CamCT\c[6]Лона：\c[0] Что-то случилось?
-\narr Похоже у повозки сломалось колесо, от чего она стала неподвижной.
-\narrOFF\CamMP[Volodimer_f]\c[5]???：\c[0] Кхм... Муадмазель, не соизволите вы отойти на пару саженцев отсюда? В данный момент производятся технические работы...
-\narrOFF\CamMP[Volodimer_f]\c[5]???：\c[0] *что-то проворчал в сторону повозки, продолжая копаться в ней*
+\narr Walking along the road, you notice a young man. He is well dressed, which clearly betrayed in him a man from a noble family.
+Looks like he's doing something to the wagon.
+\narrOFF\CamMP[Volodimer_f]\c[5]???：\c[0] *in the floor of his voice* Thrice fucking bastard... All the trough in the shit! All wheels to hell!
+\narr The \c[5]stranger \c[0] doesn't seem to be in the best of moods.
+\narrOFF\CamCT\c[6]Lona：\c[0] Did something happen?
+\narr The wagon's wheel appears to have broken, rendering it immobile.
+\narrOFF\CamMP[Volodimer_f]\c[5]???：\c[0] Ahem... Muadmazel, would you mind moving a few seedlings away from here? Technical work is currently underway...
+\narrOFF\CamMP[Volodimer_f]\c[5]???：\c[0] *grumbled something in the direction of the cart, continuing to dig in it*
 
 Volodimer/FirstMeeting_rand1
-\CamMP[Volodimer_f]\c[5]???：\c[0] *проворчал что-то невнятное*
+\CamMP[Volodimer_f]\c[5]???：\c[0] *grumbled something unintelligible*
 
 Volodimer/FirstMeeting_rand2
-\CamMP[Volodimer_f]\c[5]???：\c[0] *копаясь* Да чтоб тебя червонец разобрал...
+\CamMP[Volodimer_f]\c[5]???：\c[0] *digging around* Yes, so that the gold coin can sort you out...
 
 Volodimer/FirstMeeting_rand3
-\CamMP[Volodimer_f]\c[5]???：\c[0] *продолжая копаться* Дрянная Ноэрская техника!
+\CamMP[Volodimer_f]\c[5]???：\c[0] *keep digging* Damn it Noer tech!

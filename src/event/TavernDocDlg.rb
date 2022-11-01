@@ -97,7 +97,7 @@ def doc_about_guests
 		$story_stats["3s_doc_about_guests"] = 1;
 		doc_t_m_dialog
 	else
-		msgbox "ddd"
+		#msgbox "ddd"
 		doc_about_guests
 	end
 end

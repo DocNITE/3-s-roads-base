@@ -2,14 +2,14 @@
 
 
 Dick/FirstMeeting
-\CamMP[Dick]\c[18]???：\c[0] Привет. Теперь ты у нас новая шлю-ю...ой то есть, офицантка?
-\CamCT\c[6]Лона：\c[0] А-а-ам... 
-\CamMP[Dick]\c[18]???：\c[0] А-ам, у нас была одна такая. Но теперь она кормит червей за домом к востоку отсюда, но ты туда не пойдешь.
+\CamMP[Dick]\c[18]???：\c[0] Hello. Now you're our new whore...oh, i mean, waitress?
+\CamCT\c[6]Lona：\c[0] Ahh...
+\CamMP[Dick]\c[18]???：\c[0] Ah, we had one of those. But now she feeds the worms behind the house east of here, but you won't go there.
 \c[18]???：\c[0] ...
-\c[18]???：\c[0] Не бери в голову. В любом случае - \c[3]хозяин \c[0]мудак. Отгрохал закусочную в глуши и платит гроши.
-\c[18]???：\c[0] Всего-то \{100 SOCIAL CREDIT \}за гражданскую оборону закусочной от коммунистов со севера.
-\c[18]???：\c[0] Про каких коммунистов? Ты никогда не слышала про них?
-\CamCT\c[6]Лона：\c[0] ... 
-\bg[../../ModScripts/_Mods/3-s-roads-base/tex/dick_dlg_1]\CamMP[Dick]\c[18]???：\c[0] А-ах, ну-у... Это странные ребята, что осадили Сибарис сейчас. Говорят сам губернатор Ноэра - \c[4]eccma417 \c[0] презирает их.
+\c[18]???：\c[0] Never mind. In any case, \c[3]master \c[0]is an asshole. He built a tavern in the middle of nowhere and pays a pittance.
+\c[18]???：\c[0] Only \{100 SOCIAL CREDIT \}for civil defense of the tavern from the communists from the north.
+\c[18]???：\c[0] What communists? You never heard of them?
+\CamCT\c[6]Lona：\c[0] ...
+\bg[../../ModScripts/_Mods/3-s-roads-base/tex/dick_dlg_1]\CamMP[Dick]\c[18]???：\c[0] Ah, well... These are the strange guys that laid siege to Sybaris now. Governor Noera himself speaks - \c[4]eccma417 \c[0] hate them.
 \c[18]???：\c[0] ...
-\bgoff\c[18]Дик：\c[0] И да, я - \c[21]Дирк\c[0], но, забавы ради, называют \c[18]Диком\c[0]. В честь того самого святого хуя, что в лесу у пенисоедов.
+\bgoff\c[18]Dick：\c[0] And yes, I'm \c[21]Dirk\c[0], but for fun, they call me \c[18]Dick\c[0]. It was named for holy dick that is in the forest with penis eaters.
