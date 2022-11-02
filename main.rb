@@ -27,7 +27,7 @@
 Z_MOD_NAME          = "3-s-roads-base";
 Z_MOD_FOLDER        = "ModScripts/_Mods/" + Z_MOD_NAME + "/";
 
-Z_MOD_VERSION       = "0.1.0";
+Z_MOD_VERSION       = "0.1.1";
 
 # include script file
 def import(path, file)
