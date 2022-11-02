@@ -39,7 +39,7 @@ import(Z_MOD_NAME, "src/Constant.rb"        );
 import(Z_MOD_NAME, "src/StoryStats.rb"      );
 
 #load dev.bak. edit's for 0.7.3.0 version
-load_from_list(getFileList("#{Z_MOD_FOLDER}src/dev_bak_support/*.rb"))
+#load_from_list(getFileList("#{Z_MOD_FOLDER}src/dev_bak_support/*.rb"))
 
 #main SDK
 #import(Z_MOD_NAME, "src/CEventMap.rb"       );
